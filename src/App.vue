@@ -47,6 +47,8 @@
     <LearningAttr/>
     <hr>
     <Color/>
+    <hr>
+    <FatherElement/>
   </div>
 </template>
 
@@ -55,6 +57,7 @@ import TodoList from './components/TodoList.vue'
 import TagSelector from './components/TagSelector.vue'
 import LearningAttr from './components/LearningAttr.vue'
 import Color from './components/Color.vue'
+import FatherElement from './components/FatherElement.vue'
 export default {
   name: 'App',
 
@@ -82,7 +85,8 @@ export default {
     TodoList,
     TagSelector,
     LearningAttr,
-    Color
+    Color,
+    FatherElement
   },
 
   methods:{
@@ -118,6 +122,11 @@ export default {
 </script>
 
 <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .c1{
   width: 100px;

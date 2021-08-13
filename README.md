@@ -54,12 +54,29 @@ ref: ánh xạ đến element : this.$refs.name
 - v-if: ẩn/hiện theo điều kiện (không có trong DOM)
 
 - v-for: lặp
+
+1, Development
+    - Babel
+        -> ES6 -> bản cũ để trình duyệt cũ đọc được
+    - Webpack
+        -> Công cụ đóng gói code
+2, Production
 ## keep tracking : nên vòng for có sinh unique key assign
 
 
-props: data từ cha -> con ; props down
+- props: data từ cha -> con ; props down
+    + tạo cú pháp giống thuộc tính và ràng buộc nó <tag :tên thuộc tính="biến" />
+    + props khi đã khai báo sẽ giống như data
+
+- event up: thông điệp từ con -> cha (dùng custom event)
+    + tạo ra một sự kiện (custom event) <tag @tenxukien_custom="hamxuli_custom"/>
+    + trong thẻ con tạo ra một sự tương tác với người dùng ví dụ như click -> khi click gọi đến 1 hàm -> trong hàm 
+này sẽ chạy this.$emit('tenxukien_custom')f
+
 có hai cách khai báo props:
     + dùng mảng tên các props
+
+- event bus vuejs: dùng để tương tác giữa các component
 
 custom event
 
