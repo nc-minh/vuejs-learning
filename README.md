@@ -65,11 +65,11 @@ ref: ánh xạ đến element : this.$refs.name
 
 
 - props: data từ cha -> con ; props down
-    + tạo cú pháp giống thuộc tính và ràng buộc nó <tag :tên thuộc tính="biến" />
+    + tạo cú pháp giống thuộc tính và ràng buộc nó `<tag :tên thuộc tính="biến" />`
     + props khi đã khai báo sẽ giống như data
 
 - event up: thông điệp từ con -> cha (dùng custom event)
-    + tạo ra một sự kiện (custom event) <tag @tenxukien_custom="hamxuli_custom"/>
+    + tạo ra một sự kiện (custom event) `<tag @tenxukien_custom="hamxuli_custom"/>`
     + trong thẻ con tạo ra một sự tương tác với người dùng ví dụ như click -> khi click gọi đến 1 hàm -> trong hàm 
 này sẽ chạy this.$emit('tenxukien_custom')f
 
