@@ -82,7 +82,11 @@ custom event
 
 filter: thành phần ở giữa bind
 
-```
+## các cách truyền dữ liệu qua lại từ components cha và con
+- có thể dùng: props down và event up nhưng nếu truyền ở các cấp bậc xa nhau gây tốn thời gian
+    + truyền data từ cha sang con có thể dùng slot tag (mẹo không nên dùng nên sử dụng props thay thế)
+- dùng event bus
+- dùng vueX
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
