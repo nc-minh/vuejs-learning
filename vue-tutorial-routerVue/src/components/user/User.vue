@@ -9,7 +9,7 @@
           <hr>
           <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
         </div>
-        <button class="btn btn-success" @click="backHome">Back Home</button>
+        <router-link class="btn btn-success" to="/">Back Home</router-link>
         <!-- <UserDetails/> -->
         <router-view></router-view>
       </div>
@@ -21,9 +21,6 @@ import UserDetails from './UserDetails.vue'
 export default {
     name: 'user',
     methods:{
-      backHome(){
-        this.$router.push('/')
-      },
       goToProfile(){
         this.$router.push('/profile/1')
       }

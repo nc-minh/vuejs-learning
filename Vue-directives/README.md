@@ -20,5 +20,6 @@ npm run build
     + el: thuộc tính cần tác động
     + binding: ràng buộc cần nhập vào ví dụ: custom="binding"
     + Modify 
+- Mixins
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

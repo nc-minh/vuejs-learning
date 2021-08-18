@@ -18,6 +18,9 @@ npm run build
 ```
 - transition cho router
 - redirect của router
+- Scrollbehavior
+- hash fragments
+- guards router
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
