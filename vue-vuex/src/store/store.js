@@ -12,9 +12,9 @@ export const store = new Vuex.Store({
   state: {
     value: ''
   },
-  getters,
-  mutations,
-  actions,
+  getters,//là các hàm lấy ra state // trong computed
+  mutations,//hàm để thay đổi state // trong methods
+  actions,// hành động // trong methods
   modules: {
     Result
   }
