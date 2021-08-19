@@ -1,0 +1,8 @@
+- TypeScipt Component
+- Teleport Component
+- The Composition API
+- SPA
+- Multiple root
+- Multiple v-models
+- Improved Reactivity
+- Performance gains
