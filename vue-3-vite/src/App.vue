@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router';
+
 import HelloWorld from './components/HelloWorld.vue'
 import VModel from './components/VModel.vue'
 import RenderArray from './components/RenderArray.vue'
-import OnMountedComponent from './components/OnMountedComponent.vue'
+import OnMountedComponent from '@/components/OnMountedComponent.vue';
+
+
 </script>
 
 <template>
@@ -14,6 +18,17 @@ import OnMountedComponent from './components/OnMountedComponent.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
+
+  <div>
+    <nav>
+    <RouterLink to="/">Go to Home</RouterLink>
+    <RouterLink to="/about">Go to About</RouterLink>
+  </nav>
+  </div>
+
+  <main>
+    <RouterView />
+  </main>
 
   <HelloWorld msg="Vite + Vue" />
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch, watchEffect } from "vue";
 import { User } from "../types/user";
 
 const users = ref([] as User[])
@@ -12,6 +12,14 @@ onMounted(() => {
     .then(json => {
       users.value = json
     })
+})
+
+watch(users, (newUsers) => {
+  console.log('watch:Users updated', newUsers)
+})
+
+watchEffect(() => {
+  console.log('watchEffect:Users updated', users.value)
 })
 
 </script>
